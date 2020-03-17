@@ -1,4 +1,5 @@
-var hp = 100;
+var hpmika= 100;
+var hpdragon = 200;
 
 function rysuj(){
       document.getElementById('hp').innerText = hp;
@@ -10,10 +11,14 @@ function rysuj(){
   document.getElementById('obrazek').src = './najedzona.jpg';
 }
 }
-function wkurzaj(){
-  hp = hp - 10;
-  rysuj();
+
+function sit(){
+  hpdragon = hpdragon - 45;
+  document.getElementById('jolo').innerText = hpdragon;
+
 }
+
+
 
 function nakarm(){
   hp = 100;
